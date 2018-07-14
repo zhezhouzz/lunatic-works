@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-    err := http.ListenAndServe(":12754", http.FileServer(http.Dir("/Users/zhouzhe/go/src/github.com/zhezhouzz/lunatic-works/src/web")))
+    err := http.ListenAndServe(":12754", http.FileServer(http.Dir("web")))
     if err != nil {
         log.Fatal("ListenAndServe: ", err.Error())
     }
